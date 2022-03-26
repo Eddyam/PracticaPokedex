@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+ 
+    <header>
+        <img src="./assets/pokebol.png" alt="" class="imgLogo"><h1>Pokedex</h1>
+    </header>
+    
+
+
+    <section class="contenedor-input">
+        <h2>Que pokémon estas buscando?</h2>
+        <div class="input">
+            <input type="text" class="text" placeholder="Nombre de pokemon" id="pokeName">
+            <button onclick="fetchpokemon()" class="boton">Buscar</button>
+        </div>
+    </section>
+    
+    
+    <section class="contenedor-info">
+        <div class="infor">
+            <div>
+                <span>No. </span><span class="numero" id="numero"></span>
+            </div>
+            <div><span class="nombreP" id="nombre"></span></div>
+            <div><span>Tipo </span><span class="tipo" id="tipo"></span></div>
+        </div>
+
+        <div class="imagen">
+            <img src="./assets/pokebola.png" alt="" class="img-pokemon" id="img-pokemon">
+            <div class="descripcion" id="contenedorDescripcion">
+
+            </div>
+        </div>
+        <div class="caracteristicas">
+
+            <div>
+                <h3>Informacion</h3>
+            </div>
+
+            <div>
+                <span>Habitat: </span><span class="habitat" id="habitat"></span>
+            </div>
+
+            <div>
+                <span>Peso:</span><span class="peso" id="peso"></span>
+            </div>
+            <div>
+                <span>Altura:</span><span class="altura" id="altura"></span>
+            </div>       
+
+            <div><span>Vida: </span><span class="HP" id="HP"></span> </div>
+            <div><span>Ataque: </span><span class="Ataque" id="Ataque"></span></div>
+            <div><span>Defensa: </span><span class="Defensa" id="Defensa"></span></div>
+            <div><span>Ataque Especial: </span><span class="ataque-especial" id="ataque-especial"></span></div>
+            <div><span>Defensa Especial: </span><span class="defensa-especial" id="defensa-especial"></span></div>
+            <div><span>Velocidad: </span><span class="Velocidad" id="Velocidad"></span></div>
+            
+        </div>        
+        <section id="lista-pokemon" class="lista-pokemon">
+            <h4>Lista de pokemons G1</h4>
+            
+        </section>
+    </section>
+
+    <footer>
+        <p>Elaborado por Edder Jurado Perez</p>
+        <script src="./js/pokedex.js"></script>
+    </footer>  
+        
+</body>
+</html>
